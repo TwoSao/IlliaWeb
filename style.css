@@ -1,0 +1,122 @@
+/* Общие стили */
+body {
+    background: #fff;
+    color: #000;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+main {
+    font-family: "Times New Roman", serif;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Шапка */
+header {
+    background: black url("photo.png") no-repeat 10px center;
+    background-size: 120px 120px;
+    color: white;
+    letter-spacing: 0.1cm;
+    padding: 40px 40px 40px 140px;
+    font-variant: all-petite-caps;
+    font-size: 14pt;
+}
+header h1 {
+    margin: 0;
+}
+
+/* Навигация */
+nav {
+    background: black;
+    border-top: white 1px solid;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-variant: all-petite-caps;
+    font-size: 14pt;
+    border-right: 1px solid white;
+}
+nav ul li:last-child a {
+    border-right: none;
+}
+nav ul li a:hover {
+    background: gray;
+    color: black;
+}
+
+/* Контент */
+section {
+    background: #fff;
+    color: #000;
+    border-radius: 3px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section#Osa2 {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 28px;
+    color: #fff;
+}
+h2 {
+    color: black;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Блоки тем */
+#Teemad, #Lingid {
+    margin-top: 20px;
+}
+#Teemad h2, #Lingid h2 {
+    font-size: 22px;
+}
+#Teemad ul, #Lingid ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border-left: 4px solid black;
+    border-radius: 5px;
+}
+#Teemad ul li, #Lingid ul li {
+    margin-bottom: 10px;
+    font-size: 18pt;
+    font-variant: all-petite-caps;
+}
+
+/* Подвал */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
