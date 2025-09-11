@@ -13,6 +13,29 @@ img {
     object-fit: cover;
 }
 
+/* Ссылки */
+a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Инверсия при наведении */
+a:hover {
+    background: black;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+    cursor: pointer;
+}
+
+/* Активная */
+a:active {
+    color: darkgray;
+}
+
+
+/* Контент */
 main {
     font-family: "Times New Roman", serif;
     font-size: 22px;
@@ -29,10 +52,11 @@ header {
     letter-spacing: 0.1cm;
     padding: 40px 40px 40px 140px;
     font-variant: all-petite-caps;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 header h1 {
     margin: 0;
+
 }
 
 /* Навигация */
@@ -59,13 +83,11 @@ nav ul li a {
     font-size: 14pt;
     border-right: 1px solid white;
 }
-nav ul li:last-child a {
-    border-right: none;
-}
 nav ul li a:hover {
-    background: gray;
+    background: white;
     color: black;
 }
+
 
 /* Контент */
 section {
