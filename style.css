@@ -6,7 +6,12 @@ body {
     margin: 0;
     padding: 0;
 }
-
+iframe {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
 img {
     width: 100px;
     height: 100px;
@@ -56,7 +61,13 @@ header {
 }
 header h1 {
     margin: 0;
-
+}
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 12pt;
+    font-variant: all-petite-caps;
+    letter-spacing: 0.1cm;
 }
 
 /* Навигация */
@@ -93,9 +104,11 @@ nav ul li a:hover {
 section {
     background: #fff;
     color: #000;
-    border-radius: 3px;
+    border-radius: 8px;
     padding: 20px;
     margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section#Osa2 {
@@ -138,7 +151,10 @@ h2 {
 footer {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 40px;
+    border-top: 3px solid white;
+    font-variant: all-petite-caps;
+    font-size: 14pt;
 }
