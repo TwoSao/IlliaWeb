@@ -22,7 +22,7 @@ img {
 a {
     color: black;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s steps(24);
 }
 
 /* Инверсия при наведении */
@@ -70,33 +70,46 @@ header h1 {
     letter-spacing: 0.1cm;
 }
 
+
 /* Навигация */
 nav {
     background: black;
     border-top: white 1px solid;
+    position: relative;
 }
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
+
 nav ul li {
     flex: 1;
-    text-align: center;
 }
-nav ul li a {
+
+.nav-link {
     display: block;
-    padding: 10px;
+    padding: 15px 20px;
     color: white;
     text-decoration: none;
     font-variant: all-petite-caps;
     font-size: 14pt;
     border-right: 1px solid white;
+    transition: all 0.3s ease;
+    position: relative;
 }
-nav ul li a:hover {
+
+.nav-link:hover {
     background: white;
     color: black;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: #797979;
+    border-bottom: 3px solid white;
 }
 
 
