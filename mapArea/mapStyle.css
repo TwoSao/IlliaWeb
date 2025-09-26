@@ -1,0 +1,79 @@
+div#info{
+    position: absolute;
+    font-family: "Times New Roman", serif;
+    top: 100px;
+    left: 500px;
+    width: 40%;
+    height: 30%;
+    padding: 2%;
+    background-color: #1abc9c;
+    border-radius: 10px;
+    color: black;
+}
+h1{
+    text-align: center  ;
+}
+body {
+    background: #fff;
+    color: #000;
+    font-family: "Times New Roman", serif;
+    margin: 2%;
+    padding: 5px;
+}
+img#map{
+    position: unset !important;
+    left: unset !important;
+}
+
+
+
+img#maja{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}
+img#ratas{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}
+img#kere{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}
+img#video{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}
+img#film{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}
+img#photo{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}
+img#inimene{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}
+img#pim{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}
+img#tallinn{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}
+img#kassi{
+    width: 250px;
+    position: absolute;
+    left: 30%;
+}

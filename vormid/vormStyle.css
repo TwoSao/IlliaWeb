@@ -1,0 +1,47 @@
+body {
+    font-family: Times New Roman, Times, serif;
+}
+
+form{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+h1 {
+    font-family: Times New Roman, Times, serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 2%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type='text'], input[type='number'], input[type='email'], input[type='color'], input[type='file'] input[type='date'] {
+    padding: 3px;
+    border: 1px solid gray;
+}
+
+input[type='reset'], input[type='submit'] {
+    width: 100%;
+    height: 100%;
+}
+
+
+table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+textarea {
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+}

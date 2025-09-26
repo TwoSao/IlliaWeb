@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ee">
+<head>
+    <link rel="stylesheet" href="mapStyle.css">
+    <meta charset="UTF-8">
+    <title>Pildimap</title>
+</head>
+<body>
+<h1>Pildikaarti loomine map/area abil</h1>
+<img src="img/house.png" alt="House" usemap="#housecard" id="map">
+<map name="housecard">
+    <!-- rirng-circle coords(x,y, R) -->
+    <area shape="rect" coords="142,27,191,76" href="film.html" alt="film">
+
+    <area shape="circle" coords="112,118,22" href="ratas.html" alt="ratas">
+    <!-- polügon-kolmurk- ounktid loeme vasakult paremale -->
+    <area shape="poly" coords="96,183,96,225,132,225" href="house.html" alt="house">
+    <!-- rect-ristkülik -->
+    <area shape="rect" coords="142,76,196,166" href="kere.html" alt="kere">
+</map>
+
+<div id="info">
+    siia tuleb osa klikitud osa kirjeldus ja täiendav pilt
+</div>
+<a href="../tood.html">tagasi</a>
+</body>
+</html>

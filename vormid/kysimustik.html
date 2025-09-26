@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormid HTML keeles</title>
+    <link rel="stylesheet" href="vormStyle.css">
+</head>
+<body>
+<h1>Matemaatika teadmiste küsimustik</h1>
+
+<form name="kysimustik">
+    <table>
+        <!-- tekst - text -->
+        <tr>
+            <td>
+                <label for="nimi">Sisesta oma nimi</label>
+            </td>
+            <td>
+                <input type="text" name="nimi" id="nimi" placeholder="eesnimi" >
+            </td>
+        </tr>
+        <!-- e-post - email -->
+        <tr>
+            <td>
+                <label for="email">Sisesta oma email:</label>
+            </td>
+            <td>
+                <input type="email" id="email" name="email" placeholder="nimi@email.com">
+            </td>
+        </tr>
+        <!-- Valikud - select (option) -->
+        <tr>
+            <td>
+                <label for="ryhm">Vali rühm: </label>
+            </td>
+            <td>
+                <select name="ryhm" id="ryhm">
+                    <option value="">Vali.</option>
+                    <option value="TARpv24">TARpv24</option>
+                    <option value="TARpe24">TARpe24</option>
+                    <option value="TARpv23">TARpv23</option>
+                    <option value="TARpe23">TARpe23</option>
+
+                </select>
+            </td>
+        </tr>
+        <!-- raadionupp - radio -->
+        <tr>
+            <td>
+                <strong>Küsimus 1: 2+2*2=?</strong>
+
+            </td>
+            <td>
+                <input type="radio" name="kysimus1" id="vastus1">
+                <label for="vastus1">9</label>
+                <input type="radio" name="kysimus1" id="vastus2">
+                <label for="vastus2">8</label>
+                <input type="radio" name="kysimus1" id="vastus3">
+                <label for="vastus3">6</label>
+            </td>
+        </tr>
+        <!-- valikud/märkeruut - checkbox -->
+        <tr>
+            <td>
+                <strong>Millest koosneb kera?</strong>
+            </td>
+            <td>
+                <input type="checkbox" name="kysimus2" id="keraVastus1">
+                <label for="keraVastus1">Pinnast</label>
+                <input type="checkbox" name="kysimus2" id="keraVastus2">
+                <label for="keraVastus2">Kolmnurgast</label>
+                <input type="checkbox" name="kysimus2" id="keraVastus3">
+                <label for="keraVastus3">Keskpunktist</label>
+                <input type="checkbox" name="kysimus2" id="keraVastus4">
+                <label for="keraVastus4">Läbimõõdust</label>
+
+            </td>
+        </tr>
+        <!-- liugur - range -->
+        <tr>
+            <td><strong>Millal on Piipäev?</strong></td>
+            <td>
+                <label for="pi">Märts (vali kuupäev 1-31)</label>
+                <input type="range" id="pi" min="1" max="31" value="14">
+            </td>
+        </tr>
+        <!-- arv - number -->
+        <tr>
+            <td>
+                <label for="vanus">Küsimus 4:<br>4+8+2=</label>
+            </td>
+            <td>
+                <input type="number" id="vanus" name="vanus" min="10" max="100">
+            </td>
+        </tr>
+        <!-- tekstiala - textarea -->
+        <tr>
+            <td>
+                <label for="kommentaar">Kirjuta kommentaar matemaatika kohta:</label>
+            </td>
+            <td>
+                <textarea id="kommentaar" name="kommentaar" rows="3" cols="30"></textarea>
+            </td>
+        </tr>
+        <!-- kuupäev - date -->
+        <tr>
+            <td>
+                <label for="synniaeg">Millal sündis Issac Newton:</label>
+            </td>
+            <td>
+                <input type="date" id="synniaeg" name="synniaeg">
+            </td>
+        </tr>
+        <!-- värvivalija - color picker -->
+        <tr>
+            <td>
+                <label for="lemmikvarv">Kui 2 + 3 = 5 ja vikerkaare 5. värv on … ?</label>
+            </td>
+            <td>
+                <input type="color" id="lemmikvarv" name="lemmikvarv">
+            </td>
+        </tr>
+        <!-- faili - file -->
+        <tr>
+            <td>
+                <label for="fail">Lae üles matemaatika kodutöö:</label>
+            </td>
+            <td>
+                <input type="file" id="fail" name="fail">
+            </td>
+        </tr>
+        <!-- fieldset/legend -->
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend>Vali oma lemmik matemaatika valdkon</legend>
+                    <label for="Algebra">Algebra</label>
+                    <input type="radio" name="kysimus3" id="Algebra">
+                    <br>
+                    <label for="Geomeetria">Geomeetria</label>
+                    <input type="radio" name="kysimus3" id="Geomeetria">
+                </fieldset>
+            </td>
+        </tr>
+        <!-- nupp salvesta, loobu - sumbit, reset -->
+        <tr>
+            <td>
+                <input type="submit" id="salvesta" value="Salvesta">
+
+            </td>
+            <td><input type="reset" id="loobu" value="Loobu"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
+

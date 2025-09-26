@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormid HTML keeles</title>
+    <link rel="stylesheet" href="registerStyle.css">
+</head>
+<body>
+<h1>Õpilase registreerimisvorm</h1>
+
+<form name="kysimustik">
+    <fieldset>
+        <legend>
+            Isikuandmed
+        </legend>
+        <label for="nimi">Eesnimi</label><br>
+        <input type="text" name="nimi" maxlength="30" id="nimi" placeholder="nt Mario" required>
+        <br>
+        <br>
+        <label for="perenimi">Perenimi</label><br>
+        <input type="text" name="perenimi" maxlength="30" id="perenimi" placeholder="nt Metshein" required>
+        <br>
+        <br>
+        <label for="synniaeg">Sünnikuupäev</label><br>
+        <input type="date" id="synniaeg" min="1950-01-01" max="2025-12-31" name="synniaeg" value="1980-01-01" required>
+        <br>
+        <br>
+        Sugu
+        <br>
+        <input type="radio" name="sugu" id="vastus1">
+        <label for="vastus1">Naine</label>
+        <input type="radio" name="sugu" id="vastus2">
+        <label for="vastus2">Mees</label>
+        <input type="radio" name="sugu" id="vastus3">
+        <label for="vastus3">Muu</label>
+        <br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Kontakt</legend>
+        <label for="email">E-post</label><br>
+        <input type="email" id="email" name="email" maxlength="100" placeholder="nt nimi@email.com" required>
+        <br>
+        <br>
+        <label for="number">Mobiitelefon</label><br>
+        <input type="text" pattern="^\+372\s?\d{7,8}$" id="number" name="number" placeholder="+372 1234567" required>
+        <br>
+        <br>
+        <label for="adress">Adress</label><br>
+        <textarea name="adress" id="adress" placeholder="Tänav, maja, korter"></textarea>
+        <br>
+        <br>
+        <label for="linn">Eesnimi</label><br>
+        <input type="text" name="linn" maxlength="30" id="linn" placeholder="nt Tallinn" required>
+        <br>
+        <br>
+        <label for="posti">Postiindeks</label><br>
+        <input type="text" name="posti" pattern="\d{5}$"  id="posti" title="Sisesta täpselt 5 numbrit" placeholder="nt 10111" required>
+        <br>
+        <br>
+        <label for="riik">Riik</label><br>
+        <select name="riik" id="riik">
+            <option value="Eesti">Eesti</option>
+            <option value="Venemaa">Venemaa</option>
+            <option value="Saksamaa">Saksamaa</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Muu info</legend>
+        Huvialad
+        <br>
+        <input type="checkbox" name="kysimus2" id="keraVastus1">
+        <label for="keraVastus1">Joonistamine</label>
+        <input type="checkbox" name="kysimus2" id="keraVastus2">
+        <label for="keraVastus2">Laulmine</label>
+        <input type="checkbox" name="kysimus2" id="keraVastus3">
+        <label for="keraVastus3">Tantsimine</label>
+        <input type="checkbox" name="kysimus2" id="keraVastus4">
+        <label for="keraVastus4">Kokkamine</label>
+        <br>
+        <input type="checkbox" name="kysimus2" id="keraVastus5">
+        <label for="keraVastus5">Muu: </label>
+        <input type="text" maxlength="30" placeholder="täpsusta (kuni 30 märki)">
+        <br>
+        <br>
+        <label for="isikV">Isiklik veebiöeht</label><br>
+        <input type="text" id="isikV" placeholder="https://">
+        <br>
+        <br>
+        <label for="color">Eelistatud teemavärv</label><br>
+        <input type="color" id="color">
+        <br>
+        <br>
+        <label for="faili">Dokumendid (PDF või pilt)</label><br>
+        <input type="file" id="faili" accept=".pdf,image/*">
+    </fieldset>
+    <fieldset>
+        <legend>
+            Nõustumine
+        </legend>
+        <input type="checkbox" id="nout">
+        <label for="nout">Kinnitan, et esitatud andmed on õiged ja luban nende töötlemist vastavalt kooli tingimustele.</label>
+    </fieldset>
+    <input type="button" value="Saada">
+    <input type="button" value="Tühjenda">
+
+</form>
+
+</body>
+</html>
+
