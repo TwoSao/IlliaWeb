@@ -25,7 +25,6 @@ a {
     transition: all 0.4s steps(24);
 }
 
-/* Инверсия при наведении */
 a:hover {
     background: black;
     color: white;
@@ -34,13 +33,11 @@ a:hover {
     cursor: pointer;
 }
 
-/* Активная */
 a:active {
     color: darkgray;
 }
 
 
-/* Контент */
 main {
     font-family: "Times New Roman", serif;
     font-size: 22px;
@@ -113,7 +110,6 @@ nav ul li {
 }
 
 
-/* Контент */
 section {
     background: #fff;
     color: #000;
@@ -123,6 +119,9 @@ section {
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 section#Osa2 {
     text-align: center;
@@ -170,4 +169,20 @@ footer {
     border-top: 3px solid white;
     font-variant: all-petite-caps;
     font-size: 14pt;
+}
+
+#Video, #Muusika {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+#Pildigalerii {
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#Kaardid {
+    text-align: center;
+    background: #e8f4f8;
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormist lugemine JS abil</title>
+    <script src="vormScript.js"></script>
+</head>
+<body>
+<h1>Vormist lugemine JS abil</h1>
+<form action="">
+    <label for="nimi">Kirjuta oma nimi</label>
+    <input type="text" id="nimi" name="nimi" placeholder="Eesnimi" oninput="nimiLugemine()">
+    <div id="vastus1"></div>
+    <br><br>
+
+    <input type="radio" name="sugu" id="naine" value="Sa oled naine" onclick="valiSugu()">
+    <label for="naine">Naine</label>
+    <input type="radio" name="sugu" id="mees" value="Sa oled mees" onchange="valiSugu()">
+    <label for="mees">Mees</label>
+
+    <input type="radio" name="sugu" id="laps" value="Sa oled laps" onclick="valiSugu()">
+    <label for="laps">Laps</label>
+    <br>
+    <img src="" alt="" id="pilt">
+    <br>
+    <div id="vastus2">
+    </div>
+    <br>
+    <label for="varv">vali oma lemmikvärv</label>
+    <input type="color" id="varv">
+    <input type="button" value="Värvi" onclick="valiVarv()">
+    <br>
+    <br>
+    <label for="range">Hinda ennast matemaatikas</label>
+    0<input type="range" min="0" max="100" value="0" id="range" onchange="rangeLiigub()">100
+    <br>
+    <div id="vastus3"></div>
+    <br>
+    <label for="koht">Vali oma sünnikoht</label>
+    <select name="koht" id="koht" onchange="valiKoht()">
+        <option value="">...</option>
+        <option value="Tallinn">Tallinn</option>
+        <option value="Tartu">Tartu</option>
+        <option value="Narva">Narva</option>
+    </select>
+    <div id="vastus4"></div>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Vali </legend>
+        <input type="checkbox" name="valik" id="javascript" value="Javascript" onchange="teeValik()">
+        <label for="javascript">Javascript</label>
+        <br>
+        <input type="checkbox" name="valik" id="java" value="Java" onchange="teeValik()">
+        <label for="java">Java </label>
+        <br>
+        <input type="checkbox" name="valik" id="php" value="PHP " onchange="teeValik()">
+        <label for="php">PHP</label>
+        <br>
+        <input type="checkbox" name="valik" id="python" value="Python" onchange="teeValik()">
+        <label for="python">Python</label>
+        <br>
+        <div id="vastus5"><br>
+
+        </div>
+    </fieldset>
+
+
+
+    <br><br>
+    <input type="button" value="Puhasta" onclick="puhasta()">
+</form>
+</body>
+</html>
