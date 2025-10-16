@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS piltidega töö</title>
+    <script src="pildidScript.js"></script>
+    <link rel="stylesheet" href="piltStyle.css">
+</head>
+<body onload="juhuslikPilt()">
+<h1>Random pilti näitamine</h1>
+<table>
+    <tr>
+        <td><input type="button" value="random pilt" onclick="juhuslikPilt()"><br>
+            <img src="" alt="pilt" id="pilt">
+
+        </td>
+        <td id="vastus">Vastus: </td>
+        <td><label for="valik">Vali mida sa näed pildil</label>
+            <select id="valik" onchange="selectPilt()">
+            <option value="">--</option>
+            <option value="pildid/01.png">Silm pilt</option>
+            <option value="pildid/02.png">Päike pilt</option>
+            <option value="pildid/03.png">Ilus pilt</option>
+            <option value="pildid/04.png">Raske pilt</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="kogus"></label>
+            <input type="number"id="kogus" min="1" max="100" value="" onchange="arvutaPildiHind()"></td>
+        <td>
+            Summa:
+        </td>
+        <td id="summa"></td>
+    </tr>
+</table>
+</body>
+</html>
