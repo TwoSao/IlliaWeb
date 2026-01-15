@@ -5,4 +5,3 @@
     echo "PHP leht tegi illia";
     ?>
 </footer>
-

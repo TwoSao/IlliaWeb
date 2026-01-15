@@ -1,0 +1,10 @@
+Tere tulemast meie mobiilsele veebilehele!
+
+See on värske teade, mis näitab, kuidas PHP abil saab failidest sisu lugeda ja veebilehel kuvada.
+
+Lehel saate vaadata:
+- Tunniplaani erinevate päevade kaupa
+- Anekdoote meelelahutuseks
+- Mobiilsõbralikku kujundust
+
+Nautige kasutamist!

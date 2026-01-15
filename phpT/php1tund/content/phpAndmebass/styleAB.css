@@ -1,0 +1,110 @@
+table {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+form {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #999;
+    max-width: 300px;
+    margin: 10px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input, select, textarea {
+    padding: 5px;
+    border: 1px solid #999;
+    margin: 5px 0;
+}
+
+input[type="submit"] {
+    padding: 8px 15px;
+    border: none;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: left;
+    padding: 2%;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+#menu {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #999;
+    margin: 10px 0;
+}
+
+#sisu {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #999;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+li a {
+    display: block;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+li a:hover {
+    background-color: #e0e0e0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #666;
+}

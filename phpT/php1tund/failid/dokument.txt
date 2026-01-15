@@ -1,0 +1,4 @@
+PHP on serveripoolne skriptikeel.
+See fail sisaldab rohkem teksti testimiseks.
+Siin on kolmas rida.
+Ja neljas rida ka.

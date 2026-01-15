@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autod>
+  <auto>
+    <autonumber>666THK</autonumber>
+    <v_aasta>1999</v_aasta>
+    <mark>Brevno</mark>
+    <omanik>
+      <eesnimi>Mark</eesnimi>
+      <perenimi>Jürgen</perenimi>
+      <isikukood>50207020032</isikukood>
+    </omanik>
+  </auto>
+  <auto>
+    <autonumber>123ABC</autonumber>
+    <v_aasta>2005</v_aasta>
+    <mark>Toyota</mark>
+    <omanik>
+      <eesnimi>Anna</eesnimi>
+      <perenimi>Tamm</perenimi>
+      <isikukood>60101010011</isikukood>
+    </omanik>
+  </auto>
+  <auto>
+    <autonumber>789XYZ</autonumber>
+    <v_aasta>2012</v_aasta>
+    <mark>BMW</mark>
+    <omanik>
+      <eesnimi>Karl</eesnimi>
+      <perenimi>Kask</perenimi>
+      <isikukood>39812230022</isikukood>
+    </omanik>
+  </auto>
+  <auto>
+    <autonumber>555AAA</autonumber>
+    <v_aasta>2020</v_aasta>
+    <mark>Audi</mark>
+    <omanik>
+      <eesnimi>Liis</eesnimi>
+      <perenimi>Saar</perenimi>
+      <isikukood>49506060033</isikukood>
+    </omanik>
+  </auto>
+
+</autod>
