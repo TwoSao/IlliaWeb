@@ -1,13 +1,32 @@
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 800px;
-    height: 600px;
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #f9f9f9;
+    color: #4b2e1a;
+    padding: 20px;
 }
-
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+}
 td {
-    border: 1px solid black;
     padding: 10px;
-    width: 400px;
     vertical-align: top;
+}
+input, select, textarea, button {
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.viga {
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+button {
+    width: auto;
+    margin-top: 10px;
+    margin-right: 5px;
+    cursor: pointer;
 }

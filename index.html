@@ -6,11 +6,58 @@
     <title>Illia veebirakenduste kodu leht</title>
     <link rel="stylesheet" href="style.css">
     <script src="paev.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script>
+        function punaseks(){
+            $('h1').css('color', 'white')
+        }
+        function redks(){
+            $('h1').css('color', 'red')
+        }
+        function kord(event, ui){
+            let koht = ui.offset;
+            $('#kords').html('Pildi x: ' + koht.left + '<br>Pildi y: ' + koht.top);
+        }
+        function liigutaVasakul(){
+            $('#Osa1').animate({left: '-=100px'}, 500);
+        }
+        function liigutaParemalt(){
+            $('#Osa1').animate({left: '+=100px'}, 500);
+        }
+        function suurendaPilt(){
+            $('#pilt').animate({width: '+=50px', height: '+=50px'}, 300);
+        }
+        function muudaTekst(){
+            $('h2').fadeOut(500).fadeIn(500);
+        }
+        function taasta(){
+            $('#Osa1').css('left', '0px');
+            $('#pilt').css({width: '', height: ''});
+        }
+        function stardiLeht(){
+            $('h1').mouseenter(punaseks);
+            $('h1').mouseleave(redks);
+            $('#tekst').draggable();
+            $('#pilt').draggable();
+            $('#pilt').bind("drag", kord);
+        }
+    </script>
 </head>
-<body>
+<body onload="stardiLeht()">
 <!-- Päis (шапка) -->
 <header>
     <a href="#" class="logo">Illia veebirakenduste aluste koduleht</a>
+    <br>
+    <input type="button" id="toggleNav" value="Näita navigeerimist" onclick="
+    $('nav').toggle(300);
+    if (this.value === 'Näita navigeerimist') {
+        this.value = 'Peida navigeerimine';
+    } else {
+        this.value = 'Näita navigeerimist';
+    }
+">
+
 </header>
 
 <!-- Navigeerimismenüü -->
@@ -21,14 +68,14 @@
         <li><a href="tood.html" class="nav-link">Tehtud tööd</a></li>
         <li><a href="mina.html" class="nav-link">Info minust</a></li>
         <li><a href="media.html" class="nav-link">Media</a></li>
-        <li><a href="wp">WordPress</a></li>
+        <li><a href="wp" class="nav-link">WordPress</a></li>
     </ul>
-
 </nav>
 
 <!-- Main sisu -->
 <main>
-    <section id="Osa1">
+
+    <section id="Osa1" style="position: relative;">
         <h2>TTHK veebirakenduste aluste mooduli leht</h2>
         <div>
             Veebirakendus on arvutitarkvara või programm, mida hoitakse veebiserveris ning
@@ -41,12 +88,43 @@
 
     </section>
 
+    <section id="Osa3" style="background-color: #f0f8ff; border: 2px solid #4682b4; padding: 20px; margin: 20px 0; border-radius: 10px;">
+        <h2>JQuery Juhend</h2>
+        <table id="jquerytbl">
+            <tr>
+                <th>Nupp</th>
+                <th>Kirjeldus</th>
+            </tr>
+            <tr>
+                <td><input type="button" value="Vasakule" onclick="liigutaVasakul()"></td>
+                <td>Liigutab Osa1 sektsiooni 100px vasakule</td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Paremale" onclick="liigutaParemalt()"></td>
+                <td>Liigutab Osa1 sektsiooni 100px paremale</td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Suurenda pilt" onclick="suurendaPilt()"></td>
+                <td>Suurendab pildi suurust 50px võrra</td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Vilguta tekst" onclick="muudaTekst()"></td>
+                <td>Paneb h2 pealkirjad vilkuma</td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Taasta" onclick="taasta()"></td>
+                <td>Taastab kõik muudatused algseisundisse</td>
+            </tr>
+        </table>
+    </section>
+
     <section id="Osa2">
 
         <h2>Hea pilt</h2>
-        <img src="photo.png" alt="Illia pilt"><br>
+        <img src="photo.png" id="pilt" alt="Illia pilt"><br>
         morti
         <br>
+        <h3 id="kords"></h3>
     </section>
 </main>
 

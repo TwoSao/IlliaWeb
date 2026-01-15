@@ -1,0 +1,27 @@
+img{
+    display: block;
+    border-top: 2px white solid;
+    border-left: 2px black solid;
+    border-right: white solid;
+    border-bottom: black solid;
+
+}
+input[type="number"]{
+    border: 1px solid #4b2e1a;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+    width: 90px;
+
+    background-color: #fffdfb;
+}
+#totalPrice{
+
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 8px 14px;
+    background-color: #f0e2d0;
+    width: fit-content;
+    margin: 10px auto;
+}

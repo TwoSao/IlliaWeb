@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Näidis</title>
+    <!-- jQuery CDN (min)paneme lehe juurde -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jQstyle.css">
+
+    <script>
+        function teade(){
+            alert("Kohe näitan teksti!");
+        }
+        function punaseks(){
+            $('h1').css('color', 'white')
+        }
+        function mustaks(){
+            $('h1').css('color', 'black')
+        }
+
+        function kord(event, ui){
+            let koht = ui.offset;
+            $('#xyz').html('Pildi x: ' + koht.left + '<br>Pildi y: ' + koht.top);
+        }
+
+        function stardiLeht(){
+            $('h1').mouseenter(punaseks);
+            $('h1').mouseleave(mustaks);
+            $('#tekst').draggable();
+            $('#pilt').draggable();
+            $('#pilt').bind("drag", kord);
+
+        }
+    </script>
+</head>
+<body onload="stardiLeht()">
+    <h1>jQuery - see on JS raamistik
+        ja me kasutame JQuery CDN raamatukogud</h1>
+<div id="tekst">
+    https://releases.jquery.com/ <br>
+    Otsi internetis väike kirjendus - mis on jQouery <br>
+    jQuery sisuedastusvõrk (CDN) on süsteem, mis on loodud veebisisu, eriti JavaScripti teekide (nt jQuery) edastamise jõudluse ja kiiruse parandamiseks kasutajatele kogu maailmas.
+</div>
+<input type="button" value="vasakule" onclick="$('div#tekst, h1').animate({left: '0px'}, 1000)">
+<input type="button" value="paremale" onclick="$('div#tekst, h1').animate({left: '550px'}, 1000)">
+<input type="button" value="peida" onclick="$('div#tekst').hide(2000)">
+<input type="button" value="näita" onclick="$('div#tekst').show(1000, teade)">
+
+    <img src="png.png" id="pilt" alt="png.jpg">
+<div id="xyz"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+}
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+input, select, textarea, button {
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.viga {
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+button {
+    width: auto;
+    margin-top: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
