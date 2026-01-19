@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if (!isset($_SESSION['tuvastamine'])) {
+    header('Location: register.php');
+    exit();
+}
+
 require('config.php');
 
 global $yhendus;

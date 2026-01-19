@@ -17,7 +17,9 @@
         <?php if (isset($_SESSION['tuvastamine']) && $_SESSION['role'] == 1): ?>
         <li><a href="admin.php">Admin paneel</a></li>
         <?php endif; ?>
+        <?php if (isset($_SESSION['tuvastamine'])): ?>
         <li><a href="teenused.php">Meie teenused</a></li>
+        <?php endif; ?>
         <li><a href="galerii.php">Galerii</a></li>
         <?php if (isset($_SESSION['tuvastamine'])): ?>
         <li class="user-greeting">Tere, <?php echo htmlspecialchars(isset($_SESSION['name']) ? $_SESSION['name'] : $_SESSION['email']); ?>!</li>

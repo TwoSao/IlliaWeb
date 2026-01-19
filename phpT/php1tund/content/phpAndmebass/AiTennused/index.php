@@ -15,7 +15,9 @@ include 'header.php';
                 <li>Isiklikud assistendid</li>
                 <li>Lahenduste optimeerimine</li>
             </ul>
+            <?php if (isset($_SESSION['tuvastamine'])): ?>
             <a href="teenused.php">Loe rohkem</a>
+            <?php endif; ?>
 
         </div>
 
