@@ -20,9 +20,10 @@
         <li><a href="teenused.php">Meie teenused</a></li>
         <li><a href="galerii.php">Galerii</a></li>
         <?php if (isset($_SESSION['tuvastamine'])): ?>
+        <li class="user-greeting">Tere, <?php echo htmlspecialchars(isset($_SESSION['name']) ? $_SESSION['name'] : $_SESSION['email']); ?>!</li>
         <li>
             <form action="logout.php" method="post" style="display:inline;">
-                <button type="submit" name="logout" style="background:none;border:none;color:inherit;cursor:pointer;text-decoration:underline;">Välja logi</button>
+                <button type="submit" name="logout" class="logout-btn">Välja logi</button>
             </form>
         </li>
         <?php else: ?>

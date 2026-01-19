@@ -28,8 +28,44 @@ ul {
     background-color: #1e2720;
 }
 
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+}
+
 ul li {
     float: left;
+}
+
+.user-greeting {
+    color: #ccc;
+    padding: 14px 16px;
+    margin: 0;
+    font-style: italic;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 14px 16px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.logout-btn:hover {
+    background-color: #111111;
 }
 #pea{
     margin: 0 auto;

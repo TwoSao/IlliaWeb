@@ -19,15 +19,16 @@ if (isset($_POST["submit"])) {
         $sool = 'taiestisuvalinetekst';
         $kryp = crypt($password, $sool);
 
-        $kask = $yhendus->prepare("SELECT id, email, role FROM users WHERE (email=? OR username=?) AND password=?");
+        $kask = $yhendus->prepare("SELECT id, email, role, name FROM users WHERE (email=? OR username=?) AND password=?");
         $kask->bind_param("sss", $email, $email, $kryp);
         $kask->execute();
-        $kask->bind_result($id, $db_email, $role);
+        $kask->bind_result($id, $db_email, $role, $name);
         
         if ($kask->fetch()) {
             $_SESSION['tuvastamine'] = $id;
             $_SESSION['email'] = $db_email;
             $_SESSION['role'] = $role;
+            $_SESSION['name'] = $name;
             
             if ($role == 1) {
                 header('Location: admin.php');
